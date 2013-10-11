@@ -8,6 +8,9 @@ $(document).ready(function(){
       	$( ".status" ).addClass( "hidden" );
         $( ".wrapper" ).addClass( "logged-in" );
         $( ".logged-in").removeClass( "hidden");
+        // Display some information about the authenticated user
+        $("#username").text(me.username);
+        $("#followersCount").text(me.followers_count);
       });
     });
   });
